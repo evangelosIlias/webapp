@@ -18,7 +18,4 @@ $cms_opt = [
         echo 'Connection to cms database failed: '. $e->getMessage();
     }
 
-
-$from_email = "teamofgismaps@gmail.com";
-$replay_email = "teamofgismaps@gmail.com";     
 ?>

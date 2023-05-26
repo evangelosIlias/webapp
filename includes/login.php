@@ -25,7 +25,7 @@ header('Expires: 0');
     if (logged_in()) {
         $email = $_SESSION['email'];
         $username = $_SESSION['username'];
-        $username = $_SESSION['user_role'];  
+        $user_role = $_SESSION['user_role'];  
         redirect_index("index.php");
     }     
 ?>
@@ -46,7 +46,7 @@ header('Expires: 0');
         <input type="submit" class="btn_login" value="Login" name="submit">
     </div>
     <div>
-        <p>Don't have an Account?<a href="../registration.php"> Register here</a></p>   
+        <p>Don't have an Account?<a href="../index.php"> Register here</a></p>   
     </div>
     <div>
         <a href="reset_password.php" class="forgot_password"> Forgot Password?</a>

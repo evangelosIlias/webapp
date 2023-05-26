@@ -29,7 +29,6 @@ if(isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION["user_role"] = $user_cred["user_role"];
             $_SESSION["joined"] = $user_cred["joined"];
 
-            
             // Set a cookie with the session data
             setcookie("email", $user_cred["email"], time() + 3600 * 24 * 30, "/", "", true, true);
             
