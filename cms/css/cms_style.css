@@ -1,0 +1,5 @@
+.pager li.active a {
+    background-color: rgb(228, 218, 229);
+    color: #824794;
+    font-size: 18px;
+}
