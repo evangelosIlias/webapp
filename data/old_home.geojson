@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "old_home",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "lat": 391978.59, "lon": 384803.31, "address": "Wilmslow Rd, Manchester ", "name": "old_home", "postcode": "M20 3GU", "auxiliary_storage_labeling_positionx": 384845.29410253483, "auxiliary_storage_labeling_positiony": 391890.38532007777 }, "geometry": { "type": "Point", "coordinates": [ -2.230151190649102, 53.424379340594683 ] } }
+]
+}
