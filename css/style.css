@@ -1,0 +1,71 @@
+body{
+   margin: 0;
+   padding: 0;
+}
+#map {
+    height: 100vh;
+}
+
+.container_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 80%;
+    left: 0;
+    min-width: 50px;
+    max-width: 15%;
+    min-height: 50px;
+    max-height: 12%;
+    position: absolute;
+    z-index: 1000;
+    border-radius: 40px;
+    font-weight: bold;
+    color: black;
+    font-size: x-large;
+    
+ }
+
+ .container_text p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+ }
+
+ #options {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: aliceblue;
+ }
+
+ .col-xs-12, .col-xs-6, .col-xs-3 {
+   padding: 7px;
+ }
+
+ #divProject {
+   background-color: rgba(125, 57, 188, 0.247);
+ }
+
+ #divProjectLabel h4{
+   color: aliceblue;
+   font-family: 'Poppins', sans-serif;
+ }
+
+ .errorMsg {
+   padding: 0;
+   text-align: center;
+   background-color:rgb(167, 113, 219);
+ }
+
+ .ui-autocomplete {
+  cursor:pointer; 
+  height:350px;
+  overflow-y:scroll;
+ }
+

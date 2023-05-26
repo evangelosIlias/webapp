@@ -1,0 +1,77 @@
+/*********************************************************
+**                                                      **
+**       Leaflet Plugin "Leaflet.PolylineMeasure"       **
+**       File "Leaflet.PolylineMeasure.css"             **
+**       Date: 2021-10-05                               **
+**                                                      **
+*********************************************************/
+
+
+.leaflet-bar{
+    cursor: pointer;
+}
+
+a.polyline-measure-controlOnBgColor, a.polyline-measure-controlOnBgColor:hover {
+    background-color: rgb(80, 207, 105);
+}
+
+#polyline-measure-control{
+    background-image: url('/webapp/img/measure.png');
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    width: 44px;
+    height: 45px;
+}
+
+#polyline-measure-control:hover{ 
+    border-radius: 10%;
+	transform: scale(1.2);
+  	transition: all 0.4s ease-in-out;
+  	background-color: #951fcb;
+}
+
+.polyline-measure-unicode-icon {
+    font-size: 0;
+    font-weight: bold; 
+}
+
+a.polyline-measure-clearControl:active {
+    background-color: #f88;
+}
+
+.polyline-measure-tooltip {
+    font: 15px Arial, Helvetica, sans-serif;
+    line-height: 15px;
+    background-color: rgba(255, 255, 170, 0.7);
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px #888;
+    margin: 0;
+    padding: 2px;
+    width: auto !important;
+    height: auto !important;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.polyline-measure-tooltip-end {
+    background-color: rgba(255, 255, 40, 0.7);
+}
+
+.polyline-measure-tooltip-total {
+    color: #006;
+    font-weight: bold;
+}
+
+.polyline-measure-tooltip-difference {
+    color: #060;
+    font-style: italic;
+}
+
+.polyline-measure-popupTooltip {
+    font: 20px Arial, Helvetica, sans-serif;
+    line-height: 20px;
+}
+
+
+
+
