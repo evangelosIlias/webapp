@@ -1,162 +1,192 @@
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    }
-
-    /* Green color for the message once the user is logged in  */ 
-    .green_color {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    background-color: #c3e6cb;
-    color: #155724;
-    border: 1px solid #b1dfbb;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 30px;
-    }
-
-    /* Container images */ 
-    .container_images_contact {
-    display: flex;
-    justify-content: space-between;
-    }
-
-    /* Container first image */ 
-    .container_image_contact_1 img {
-    flex-direction: column;
-    height: 35vh;
-    display: block;
-    margin-top: 15vh;
-    margin-left: 5vh;
-    }
-
-    /* Container second image */ 
-    .container_image_contact_2 img {
-    flex-direction: column;
-    display: flex;
-    position: relative;
-    height: 50vh;
-    margin-top: 40vh;
-    width: 80vh;
-    margin-left: 5vh;
-    }
-
-    /* Control the email sublject message position */ 
-    .form-group h2 {
-    text-align: left;
-    font-weight: bold;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    }
-
-    /* The Login form container */ 
-    .container_form_contact {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    max-width: 600px;
-    padding: 50px;
-    background: linear-gradient(to bottom right, #f5f5f5, #ffffff);
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    text-align: center;
-    }
-
-    /* The heared Login  */ 
-    .container_form_contact h1 {
-    margin-bottom: 60px;
-    text-align: center;
-    font-family: 'Courgette';
-    }
-
-    /* The form group elements */ 
-    .form-group {
-    margin-bottom: 35px;
-    width: 330px;
-    }
-
-    /* The button Main menu */
-    .mainmenu {
-    display: flex;
-    bottom: 20%;
-    left: 75%;
-    margin: -5% 45% 0 0;
-    position: relative;
-    z-index: 999;
-    }
-
-    /* The button Main menu */
-    .mainmenu a {
-    background-color: #333;
-    width: auto;
-    color: #fff;
-    font-size: 0.9rem;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-    position: relative;
-    text-decoration: none; /* Remove underline */
-    }
-
-    /* The button Main menu Hover */
-    .mainmenu a:hover {
-    background-color: #fff;
-    color: #333;
-    }
-    
-
-    /* The button login */ 
-    .form-group .btn_login {
-    display: fixed;
-    margin: 0 auto;
-    background: linear-gradient(
-        292.9deg,
-        rgb(254, 105, 241) 28.8%,
-        rgb(182, 44, 248) 70.4%
-    );
-    color: #fff;
-    font-size: 18px;
-    padding: 8px 20px;
-    border-radius: 10px;
-    width: 200px;
-    align-items: center;
-    justify-content: center;
-    }
-
-  /* Media for the behaviour of the images for small screens */ 
-  @media only screen and (max-width: 768px) {
-    body {
-      overflow-x: hidden;
-  }  
-    .container_images_contact {
-      display: flex;
-      flex-direction: column;
-    }
-    .container_images_contact img {
-      height: 35vh;
-      margin-top: 2vh;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .container_images_contact img {
-      height: 30vh;
-      margin-top: 45vh;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
   }
+
+  /* Green color for the message once the user is logged in  */ 
+  .green_color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background-color: #c3e6cb;
+  color: #155724;
+  border: 1px solid #b1dfbb;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 30px;
+  }
+
+  /* Container images */ 
+  .container_images_contact {
+  display: flex;
+  justify-content: space-between;
+  }
+
+  /* Container first image */ 
+  .container_image_contact_1 img {
+  flex-direction: column;
+  height: 35vh;
+  display: block;
+  margin-top: 15vh;
+  margin-left: 5vh;
+  }
+
+  /* Container second image */ 
+  .container_image_contact_2 img {
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  height: 50vh;
+  margin-top: 40vh;
+  width: 80vh;
+  margin-left: 5vh;
+  }
+
+  /* Control the email sublject message position */ 
+  .form-group h2 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  }
+
+  /* The Login form container */ 
+  .container_form_contact {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 600px;
+  padding: 50px;
+  background: linear-gradient(to bottom right, #f5f5f5, #ffffff);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+  }
+
+  /* The heared Login  */ 
+  .container_form_contact h1 {
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: 'Courgette';
+  }
+
+  /* The form group elements */ 
+  .form-group {
+  margin-bottom: 35px;
+  width: 330px;
+  }
+
+  /* The button Main menu */
+  .mainmenu {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  margin-right: 32%;
+  z-index: 999;
+  }
+
+  /* The button Main menu */
+  .mainmenu a {
+  background-color: #333;
+  width: auto;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none; 
+  }
+
+  /* The button Main menu Hover */
+  .mainmenu a:hover {
+  background-color: #fff;
+  color: #333;
+  }
+  
+  /* The button login */ 
+  .form-group .btn_login {
+  display: fixed;
+  margin: 0 auto;
+  background: linear-gradient(
+      292.9deg,
+      rgb(254, 105, 241) 28.8%,
+      rgb(182, 44, 248) 70.4%
+  );
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  }
+
+/* Media for the behavior of the images for small screens */
+@media only screen and (max-width: 768px) {
+body {
+  overflow-x: hidden;
+}
+
+.container_images_contact {
+  display: flex;
+  flex-direction: column;
+}
+.container_image_contact_1 img {
+  height: 25vh;
+  margin-top: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container_image_contact_2 img {
+  width: 50vh;
+  height: 30vh;
+  margin-top: 45vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container_form_contact {
+  /* Adjust the value as needed */
+  padding-top: 0; /* Remove top padding */
+}
+
+.container_form_contact h1 {
+  margin-top: 140%; /* Remove top margin */
+}
+
+.mainmenu {
+  margin: 0;
+  margin-right: 10px;
+}
+}
+/* Media for screens with a width between 769px and 944px */
+@media only screen and (min-width: 769px) and (max-width: 944px) {
+.mainmenu {
+  margin: 0;
+  width: 10%;
+  z-index: 999;
+}
+}
+
+/* Media for screens with a width between 769px and 1362px */
+@media only screen and (min-width: 769px) and (max-width: 1362px) {
+.mainmenu {
+  margin: 0;
+  margin-right: 25%; /* Adjust margin as desired */
+  z-index: 999;
+}
+}

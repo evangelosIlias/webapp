@@ -38,3 +38,11 @@ if (isset($cms_pdo) && !empty($cms_pdo)) {
     }
 }
 ?>
+
+<script>
+    $(document).ready(function(){
+        $(".delete_modal_link").on("click", function(){
+            alert("Works");
+        });
+    });
+</script>

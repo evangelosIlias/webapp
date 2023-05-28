@@ -2,6 +2,7 @@
 <?php include "admin_includes/admin_header.php"; ?>
 <?php include "admin_includes/admin_functions.php"; ?>
 
+
 <!-- HTML code for the categories page -->
 <div id="wrapper">
 

@@ -17,14 +17,14 @@ header("Cache-Control: max-age=3600"); ?>
 </div>
 </div>
 
-<!-- Contact container -->
-< class="container_form_contact">
-    <h1>Contact Form</h1>
-
 <!-- The main menu button -->
 <div class="mainmenu">
     <a href="index.php">Main menu</a> 
 </div>      
+
+<!-- Contact container -->
+<div class="container_form_contact">
+    <h1>Contact Form</h1>
 
 <?php 
 // Checking if the form is submitted
@@ -72,6 +72,7 @@ show_msg();
         <input type="submit" class="btn_login" value="Submit" name="submit">
     </div>
 </form>
+</div>
  
 <!-- Script connection -->  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
