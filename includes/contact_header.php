@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Welcome to main menu</title>
-
+    <title>Contact</title>
+    
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,8 +17,9 @@
 
     <!-- BOOSTRAP CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- CSS Connection -->
-    <link rel="stylesheet" href="../css/web_style.css">
+    <link rel="stylesheet"  type="text/css" href="../css/contact.css">
+
 </head>
 <body>

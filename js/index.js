@@ -186,7 +186,7 @@ $(document).ready(() => {
             icon: 'fa-solid fa-house',
             title: 'Return to Home',
             onClick: () => {
-                window.location.href = '/webapp/includes/index.php';
+                window.location.href = '../includes/index.php';
             },
         }]
     }).addTo(map).setPosition('bottomright');

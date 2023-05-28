@@ -200,4 +200,18 @@
         }
     }
 
+    // Login function checking for cookie on email session
+    function cms_check_logged_status() {
+        if (isset($_SESSION['email'])) {
+            return true;
+        } else {
+            if (isset($_COOKIE['email'])) {
+                $_SESSION['email'] = $_COOKIE["email"];
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+
 ?>    

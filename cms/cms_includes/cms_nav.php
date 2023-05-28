@@ -25,9 +25,20 @@
         <li>
             <a href="#">Contact</a>
         </li>
-        <li>
-            <a href="admin">Admin</a>
-        </li>
+        <?php
+    // Checking if the user is logged in and if user_role is admin or not
+    if (cms_check_logged_status()) {
+      if (isset($_SESSION) && !empty($_SESSION)) {
+        $email = $_SESSION['email'];
+        $username = $_SESSION['username'];
+        $user_role = $_SESSION['user_role'];
+
+        if (isset($user_role) && $user_role === 'admin') {
+          echo "<li><a href='admin'>Admin</a></li>";
+        }
+      }
+    }
+    ?>
     </ul>
 </div> 
 

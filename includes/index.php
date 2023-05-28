@@ -19,7 +19,7 @@ header("Cache-Control: max-age=3600");
     <li><a href="index.php">Home</a></li>
     <li><a href="../cms/index.php">Blog</a></li>
     <li><a href="../map_index/index.php">Map</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="contact.php">Contact</a></li>
     <?php
     // Checking if the user is logged in and if user_role is admin or not
     if (logged_in()) {
@@ -136,6 +136,7 @@ show_msg('green_color');
 
 <!-- JS connection --> 
 <script src="../js/web_index.js"></script>
+
 </body>
 </html>
 

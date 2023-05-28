@@ -26,7 +26,7 @@ const sr = ScrollReveal ({
     reset: true
 });
 
-// Setting up the reveal for the animation
+// Setting up the reveal for the animation index.php main page
 sr.reveal(".info_head", {origin: 'top'});
 sr.reveal(".info_head h1 ", {origin: 'bottom'});
 sr.reveal(".welcome_text ", {origin: 'left'});

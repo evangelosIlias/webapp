@@ -135,15 +135,15 @@ if (!empty($error)) {
 <form method="post" action="" enctype="multipart/form-data">
     <div class="form-group">    
         <label for="post_head">First Name</label>
-        <input type="text" value= "<?php echo $fname?>" class="form-control" name="firstname" placeholder="Add your first name">
+        <input type="text" value= "<?php echo $fname; ?>" class="form-control" name="firstname" placeholder="Add your first name">
     </div>
     <div class="form-group">
         <label for="post_title">Last Name</label>
-        <input type="text" value= "<?php echo $lname?>" class="form-control" name="lastname" placeholder="Add your last name">
+        <input type="text" value= "<?php echo $lname; ?>" class="form-control" name="lastname" placeholder="Add your last name">
     </div>
     <div class="form-group">
         <label for="post_title">User Name</label>
-        <input type="text" value= "<?php echo $username?>" class="form-control" name="username" placeholder="Add your username">
+        <input type="text" value= "<?php echo $username; ?>" class="form-control" name="username" placeholder="Add your username">
     </div>
     <div class="form-group">
         <label for="user_id">User Role</label> 
@@ -156,23 +156,23 @@ if (!empty($error)) {
     </div>
     <div class="form-group">
         <label for="post_author">Email</label>
-        <input type="email" value= "<?php echo $email?>" class="form-control" name="email" placeholder="Add your email address" >
+        <input type="email" value= "<?php echo $email; ?>" class="form-control" name="email" placeholder="Add your email address" >
     </div>
     <div class="form-group">
         <label for="post_status">Confrim Email</label>
-        <input type="text" value= "<?php echo $email_conf?>" class="form-control" name="email_confirm" placeholder="Confirm your email address:" >
+        <input type="text" value= "<?php echo $email_conf; ?>" class="form-control" name="email_confirm" placeholder="Confirm your email address:" >
     </div>
     <div class="form-group">
         <label for="img">User Image</label>
-        <input value= "<?php echo $post_image ?>" type="file" class="form-control" name="image">
+        <input value= "<?php echo $post_image; ?>" type="file" class="form-control" name="image">
     </div>
     <div class="form-group">
         <label for="post_tags">Password</label>
-        <input type="password" value= "<?php echo $pword?>" class="form-control" name="password" placeholder="Add your password" >
+        <input type="password" value= "<?php echo $pword; ?>" class="form-control" name="password" placeholder="Add your password" >
     </div>
     <div class="form-group">
         <label for="post_tags">Confirm Password</label>
-        <input type="password" value= "<?php echo $pword_conf?>" class="form-control" name="password_confirm" placeholder="Confirm Password" >
+        <input type="password" value= "<?php echo $pword_conf; ?>" class="form-control" name="password_confirm" placeholder="Confirm Password" >
     </div>
     <div class="form-group">
         <input type="submit" class="btn btn-primary" name="submit" value="Add User">

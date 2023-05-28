@@ -149,7 +149,7 @@ nav {
     margin-top: 80px;
 } 
 
-.gis_button_container a{
+.gis_button_container a {
     display: flex;
     justify-content: start;
     align-items: flex-end;
