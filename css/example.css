@@ -342,46 +342,6 @@ nav {
       z-index: 999;
     }
   }
-
-/* Adjustments for smaller screens */
-@media screen and (max-width: 760px) {
-    body {
-        overflow-x: hidden;
-      }
-
-    .container_welcome,
-    .container_gis {
-      flex-direction: column;
-      margin-top: 20px;
-    }
-  
-    .welcome_text,
-    .welcome_image,
-    .gis_text,
-    .gis_image {
-      width: 95%;
-      flex-basis: unset;
-      margin: 0 auto;
-      margin-top: 30px;
-      margin-right: 10px; /* Adjust the value as desired */
-    }
-  
-    .welcome_text {
-      margin-top: 20px; /* Adjust the value as desired */
-    }
-  
-    .gis_text {
-      margin-top: 10px; /* Adjust the value as desired */
-    }
-  
-    .gis_button_container a {
-      margin-top: 30px;
-      margin-right: 0;
-      text-align: center;
-    }
-  }
-  
-  
   
 /* JavaScript behaviour to toggle active the burger */ 
 .nav-active {
@@ -400,4 +360,3 @@ nav {
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
   }
-

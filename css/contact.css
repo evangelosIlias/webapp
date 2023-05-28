@@ -159,10 +159,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.container_form_contact {
-  /* Adjust the value as needed */
-  padding-top: 0; /* Remove top padding */
-}
 
 .container_form_contact h1 {
   margin-top: 140%; /* Remove top margin */
@@ -178,8 +174,8 @@ body {
 .mainmenu {
   margin: 0;
   width: 10%;
-  z-index: 999;
 }
+
 }
 
 /* Media for screens with a width between 769px and 1362px */
@@ -187,6 +183,6 @@ body {
 .mainmenu {
   margin: 0;
   margin-right: 25%; /* Adjust margin as desired */
-  z-index: 999;
 }
+
 }

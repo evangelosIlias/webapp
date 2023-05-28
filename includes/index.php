@@ -126,7 +126,7 @@ show_msg('green_color');
     <a href="../map_index/index.php">
         <button>Find out more</button>
     </a>
-</div>
+</div><br><br>
 
 <!-- Script Connection -->  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
