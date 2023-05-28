@@ -23,7 +23,7 @@
             <a href="../map_index/index.php">Map</a>
         </li>
         <li>
-            <a href="#">Contact</a>
+            <a href="../includes/contact.php">Contact</a>
         </li>
         <?php
     // Checking if the user is logged in and if user_role is admin or not
