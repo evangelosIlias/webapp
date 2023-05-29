@@ -128,10 +128,24 @@
             $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
             return $categories;
         } catch (PDOException $e) {
-            echo "Error categories can not be found: " . $e->getMessage();
+            echo "Error categories cannot be found: " . $e->getMessage();
+            return false;
         }
     }
- 
+    // GEt categories by ID
+    function get_category_by_id($cms_pdo, $cat_id) {
+        try {
+            $sql = "SELECT * FROM categories WHERE cat_id = :cat_id";
+            $stmt = $cms_pdo->prepare($sql);
+            $stmt->bindParam(':cat_id', $cat_id);
+            $stmt->execute();
+            $category = $stmt->fetch(PDO::FETCH_ASSOC);
+            return $category;
+        } catch (PDOException $e) {
+            echo "Error retrieving category: " . $e->getMessage();
+        }
+    }
+
      // This function categories will check the database and return all the cat_titles values from post table
      function check_posts($cms_pdo) {
         try {
@@ -308,5 +322,4 @@
             echo  "Error:" .$e->getMessage();
         }
     }
-
 ?>    

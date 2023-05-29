@@ -102,16 +102,24 @@ if (!empty($error)) {
         <input value= "<?php echo $check_posts_by_id['post_title']; ?>" type="text" class="form-control" name="post_title">
     </div>
     <div class="form-group">
-        <label for="post_category_id">Post Category Id</label> 
-        <p>Please pick up a category, if the category does not exist add a new category from the Categories</p><br>
-        <select name="post_category_id" id="post_category">
-    <?php 
-        $admin_cat = admin_categories($cms_pdo);
-        if (!empty($admin_cat)) {
-            foreach ($admin_cat as $cat_admin) {
-                $selected = ($cat_admin['cat_id'] == $_SESSION['post_id']['post_category_id']) ? 'selected' : '';
-                echo "<option value='" . $cat_admin['cat_id'] . "' $selected>" . $cat_admin['cat_title'] . "</option>";
-            }   
+    <label for="post_category_id">Post Category Id</label> 
+    <p>Please pick a category. If the category does not exist, add a new category from the Categories.</p><br>
+    <select name="post_category_id" id="post_category">
+        <?php 
+        if (isset($_GET['id_posts'])) {
+            $id_posts = $_GET['id_posts'];
+            $check_posts_by_id = post_result_by_id($cms_pdo, $id_posts);
+            $admin_categories = admin_categories($cms_pdo);
+            $post_category_id = $check_posts_by_id['post_category_id'];
+            $associated_category = null;
+            foreach ($admin_categories as $category) {
+                if ($category['cat_id'] == $post_category_id) {
+                    $associated_category = $category;
+                    echo "<option value='" . $category['cat_id'] . "' selected>" . $category['cat_title'] . "</option>";
+                } else {
+                    echo "<option value='" . $category['cat_id'] . "'>" . $category['cat_title'] . "</option>";
+                }
+            }
         }
         ?>
     </select>

@@ -31,7 +31,7 @@ show_msg('green_color');
 <!-- Creating a form for register area-->  
 <form action="index.php" method="post">
     <div class="form-group">
-        <input type="text" value= "<?php echo $fname?>" class="form-control" name="firstname" placeholder="First Name:">
+        <input type="text" value= "<?php echo isset($fname) ? $fname : '' ?>" class="form-control" name="firstname" placeholder="First Name:" autocomplete="on">
     </div>
     <div class="form-group">
         <input type="text" value= "<?php echo $lname?>" class="form-control" name="lastname" placeholder="Last Name:">
