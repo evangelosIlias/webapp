@@ -40,6 +40,7 @@
     }
     ?>
     </ul>
+   
 </div> 
 
 <!-- /.navbar-collapse -->

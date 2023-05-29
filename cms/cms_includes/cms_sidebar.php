@@ -1,9 +1,24 @@
-
 <!-- Blog Side Bar Widget Column -->
 <div class="col-md-4" style="margin-top: 100px;">
+ 
+<!-- Check status if logged in return the username of user -->
+<div class="well"> 
+    <div class="row">
+        <div class="col-lg-12">
+            <?php if (isset($_SESSION['user_role'])) { ?>
+                <h4>Welcome <?php echo $_SESSION['username']; ?></h4>
+                <div style="text-align: left; margin-top: 20px;">
+                    <a href="../includes/logout.php" class="btnlogout">Logout</a>
+                </div>
+            <?php } else {
+                echo "Oops, you are not logged in";
+            } ?> 
+        </div>
+    </div>
+</div>
 
 <!-- Blog Search Well -->
-<div class="well">
+<div class="well"> 
     <h4>Blog Search</h4>
     <form action="search.php" method="post">
     <div class="input-group">
