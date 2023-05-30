@@ -1,4 +1,20 @@
 <?php
+    function ifItIsMethod($method = null) {
+        if ($_SERVER['REQUEST_METHOD'] == strtoupper($method)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    // Checking the seession in various scenarios if the user is logged in
+    function checkIfIsLogged($check = '') {
+        if (isset($_SESSION[$check])) {
+            return true;
+        }
+        return false;
+    }
+
     // That fucntion will return the header re-direction location
     function redirect_index($loc) {
         header("Location: {$loc}");

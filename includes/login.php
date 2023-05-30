@@ -26,7 +26,7 @@ header('Expires: 0');
         $email = $_SESSION['email'];
         $username = $_SESSION['username'];
         $user_role = $_SESSION['user_role'];  
-        redirect_index("index.php");
+        redirect_index("index");
     }     
 ?>
  
