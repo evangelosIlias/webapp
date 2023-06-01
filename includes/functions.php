@@ -1,9 +1,9 @@
 <?php
+    // Checking if the method exists
     function ifItIsMethod($method = null) {
         if ($_SERVER['REQUEST_METHOD'] == strtoupper($method)) {
             return true;
         }
-
         return false;
     }
 
@@ -73,7 +73,7 @@
     // Validation code
     function get_validationcode($cms_pdo, $email) {
         try{
-            $stmnt=$cms_pdo->prepare("SELECT validationcode FROM users WHERE email=:email");
+            $stmnt=$cms_pdo->prepare("SELECT validationcode FROM users WHERE email = :email");
             $stmnt->execute([':email' => $email]);
             $row = $stmnt->fetch();
             return $row['validationcode'];
