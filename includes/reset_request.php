@@ -44,9 +44,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         // Giving an error if not all the fields are filled on the form
-        if(empty($password) || empty($password_confirm)) {
+        if (empty($password) || empty($password_confirm)) {
             $errors[] = "Please fill in all the required fields";   
-        } else {
+        }
+
+        // If there are no errors, proceed with updating the password
+        if (empty($errors)) {
             // Check if the validation code and password match
             if ($result_req['validationcode'] === $vcode) {
                 // Additional password complexity checks can be added here if needed
@@ -61,8 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $updateStmt->execute();
 
                 // Set a success message in a session variable
-                $_SESSION['success_reset_request'] = "Your password has been updated successfully";
-
+                $_SESSION['success_reset_request'] = "Your password has been successfully updated ";
             } else {
                 $errors[] = "Invalid password";
             }
@@ -81,7 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php if (isset($_SESSION['success_reset_request'])) : ?>
         <div class='alert alert-success'>
             <?php echo $_SESSION['success_reset_request']; ?><br>
-            Please visit the <a href="login.php">login area</a> to log in.
+            Please return to the <a href="login.php">login page</a>
         </div>
         <?php unset($_SESSION['success_reset_request']); ?>
     <?php endif; ?>

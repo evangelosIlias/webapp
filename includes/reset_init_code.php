@@ -47,7 +47,7 @@ if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST') 
             $url = "https://" . $_SERVER['HTTP_HOST'] . dirname($_SERVER["PHP_SELF"]) . "/reset_request.php?vcode=$vcode";
             $mail->isHTML(true);                                  //Set email format to HTML
             $mail->Subject = 'Your password reset link';
-            $mail->Body    = "<h1>You requested a password reset link</h1>
+            $mail->Body    = "<h1>You requested a new password, please check the link below</h1>
                             Click <a href='$url'>this link</a> to reset your password";
             $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
