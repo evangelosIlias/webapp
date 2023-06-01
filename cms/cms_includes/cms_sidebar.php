@@ -5,19 +5,33 @@
 <div class="well"> 
     <div class="row">
         <div class="col-lg-12">
-                <h4>Welcome <?php echo $_SESSION['username']; ?></h4>
-
+                <h4><?php
+                        if (isset($_SESSION) && !empty($_SESSION) && isset($_SESSION['username'])) {
+                        echo "<h4>Welcome " . $_SESSION['username'] . "</h4>";
+                        } else {
+                        echo "<h4>Hi Guest</h4>";
+                        }
+                        ?></h4>
                 <div style="text-align: left; margin-top: 20px;">
                     <a href="../includes/logout.php" class="btnlogout">Logout</a>
-                    <?php if (isset($_SESSION) && !empty($_SESSION)) {
+                    <?php
+                        if (isset($_SESSION) && !empty($_SESSION)) {
+                            if (isset($_SESSION['username']) && isset($_SESSION['user_role'])) {
                                 $username = $_SESSION['username'];
                                 $user_role = $_SESSION['user_role'];
-                                if (isset($user_role) && $user_role === 'admin') {
-                                echo "<a href='admin' class='btnlogout'>Admin</a>";
+
+                                if ($user_role === 'admin') {
+                                    echo "<a href='admin' class='btnlogout'>Admin</a>";
+                                } else {
+                                    // Handle non-admin user case
                                 }
                             } else {
-                                echo "Oops, you are not logged in";
-                            } ?> 
+                                // Handle missing username or user_role keys
+                            }
+                        } else {
+                            echo "Oops, you are not logged in";
+                        }
+                        ?>
                 </div>
             </div>
         </div>

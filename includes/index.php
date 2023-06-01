@@ -23,15 +23,22 @@ header("Cache-Control: max-age=3600");
     <?php
     // Checking if the user is logged in and if user_role is admin or not
     if (logged_in()) {
-      if (isset($_SESSION) && !empty($_SESSION)) {
+      if (isset($_SESSION['email'], $_SESSION['username'], $_SESSION['user_role'])) {
         $email = $_SESSION['email'];
         $username = $_SESSION['username'];
         $user_role = $_SESSION['user_role'];
-      if (isset($user_role) && $user_role === 'admin') {
+
+        if ($user_role === 'admin') {
           echo "<li><a href='../cms/admin'>Admin</a></li>";
+        } else {
+          echo ""; // Return empty if the user is not an admin
         }
+      } else {
+        echo ""; // Replace '#' with appropriate user link
       }
-      }
+    } else {
+      echo "<li><a href='login.php'>Not logged in</a></li>"; // Replace 'login.php' with appropriate login link
+    }
     ?>
     <li class="btnlogout"><a href="logout.php">Logout</a></li>
   </ul>
