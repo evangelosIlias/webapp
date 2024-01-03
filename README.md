@@ -18,45 +18,9 @@ The Gisholics Portfolio Website is a PHP-based web application serving as a port
 ## Web Map Application
 
   - Main Index
-
-Web Map Application
-
-Web Map Application Continued
-Post Area for Users
-
-Post Area
-
-Post Area Continued
-Blog Area
-
-Blog Area
-CMS Admin Panel
-
-CMS Admin Panel
-
-CMS Admin Panel Continued
-
-CMS Admin Panel Continued
-Current Functionality
-
-    Registration and Login:
-        Users can register and log in securely.
-        Forgot password functionality for account recovery.
-
-    Main Index:
-        Overview of the website's main content and sections.
-
-    Web Map Application:
-        Utilizes the Leaflet JavaScript library for interactive maps.
-
-    Post Area for Users:
-        Users can create and manage posts.
-
-    Blog Area:
-        Dedicated space for blog posts.
-
-    CMS Admin Panel:
-        Admin panel for content management and manipulation.
+  - Post Area
+  - Blog Area
+  - CMS Admin Panel
 
 Future Development
 
@@ -68,14 +32,6 @@ Future Development
 
     Admin Panel Enhancements:
         Further functionalities and improvements for the Admin panel.
-
-Contributions
-
-    Contributions are welcome! Feel free to fork the repository and submit pull requests.
-
-License
-
-    This project is licensed under the MIT License.
 
 Registration form
 
@@ -118,7 +74,12 @@ CMS Admin Panel
 
 ![](examples_images/exampleImage10.png)
 
-More sectors and ideas will be added soon.
-The login and register areas are already done, the next step will be some authentication requests and forgotten passwords,s, etc. Once is done the process will be focused on the GIS sector and Admin panel for manipulation posts etc.
+## Contributions
+
+    Contributions are welcome! Feel free to fork the repository and submit pull requests.
+
+## License
+
+    This project is licensed under the MIT License.
 
 
