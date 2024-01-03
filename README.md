@@ -22,7 +22,7 @@ The Gisholics Portfolio Website is a PHP-based web application serving as a port
   - Blog Area
   - CMS Admin Panel
 
-Future Development
+## Future Development
 
     Authentication Requests:
         Additional authentication features will be implemented.
@@ -74,12 +74,11 @@ CMS Admin Panel
 
 ![](examples_images/exampleImage10.png)
 
-## Contributions
+## Customization
 
-    Contributions are welcome! Feel free to fork the repository and submit pull requests.
+  - Feel free to download the project and make any amendments based on your requirements.
 
 ## License
 
-    This project is licensed under the MIT License.
-
+  - This project is licensed under the [MIT License](LICENSE).
 
