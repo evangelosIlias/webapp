@@ -3,26 +3,26 @@
 
 The Gisholics Portfolio Website is a PHP-based web application serving as a portfolio with various functionalities. The website includes a registration and login system, a CMS (Content Management System) Admin panel, a blog area, a post area, and a Leaflet web map application for the GIS (Geographic Information System) sector. The technology stack comprises PHP 8.1, HTML, CSS, and JavaScript, with PostgreSQL as the database.
 
-## Usage
+Usage
 
   - Visit Gisholics Portfolio for a quick glance
     
           http://gisholics.com
     
-## Website Sections
+Website Sections
 
   - Registration Form
   - Login Form
   - Forgot Password
 
-## Web Map Application
+Web Map Application
 
   - Main Index
   - Post Area
   - Blog Area
   - CMS Admin Panel
 
-## Future Development
+Future Development
 
     Authentication Requests:
         Additional authentication features will be implemented.
@@ -68,6 +68,7 @@ Blog Area
 ![](examples_images/exampleImage8.png)
 
 CMS Admin Panel
+
 ![](examples_images/exampleImage12.png)
 
 ![](examples_images/exampleImage9.png)
