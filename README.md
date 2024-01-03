@@ -1,9 +1,81 @@
-# Webapp
-This is the web site, still needs more functionality but is up and running for quick glance http://gisholics.com
+# Gisholics Portfolio Website Documentation
+## Overview
 
-Creating a PHP-based website as a portfolio with a register login, CMS Admin panel Blog area, Post area. The main index.php is still under consideration what needs to be done and the GIS sector will be the leaflet web map application.
+The Gisholics Portfolio Website is a PHP-based web application serving as a portfolio with various functionalities. The website includes a registration and login system, a CMS (Content Management System) Admin panel, a blog area, a post area, and a Leaflet web map application for the GIS (Geographic Information System) sector. The technology stack comprises PHP 8.1, HTML, CSS, and JavaScript, with PostgreSQL as the database.
 
-The website uses mainly PHP 8.1 including Html and CSS and a bit of JavaScript for the burger drop-down menu, reveal animation. The Web Map Application uses mainly Leaflet JavaScript library with Html and CSS. The website uses the PostgreSQL database as well
+## Usage
+
+  - Visit Gisholics Portfolio for a quick glance
+    
+          http://gisholics.com
+    
+## Website Sections
+
+  - Registration Form
+  - Login Form
+  - Forgot Password
+
+## Web Map Application
+
+  - Main Index
+
+Web Map Application
+
+Web Map Application Continued
+Post Area for Users
+
+Post Area
+
+Post Area Continued
+Blog Area
+
+Blog Area
+CMS Admin Panel
+
+CMS Admin Panel
+
+CMS Admin Panel Continued
+
+CMS Admin Panel Continued
+Current Functionality
+
+    Registration and Login:
+        Users can register and log in securely.
+        Forgot password functionality for account recovery.
+
+    Main Index:
+        Overview of the website's main content and sections.
+
+    Web Map Application:
+        Utilizes the Leaflet JavaScript library for interactive maps.
+
+    Post Area for Users:
+        Users can create and manage posts.
+
+    Blog Area:
+        Dedicated space for blog posts.
+
+    CMS Admin Panel:
+        Admin panel for content management and manipulation.
+
+Future Development
+
+    Authentication Requests:
+        Additional authentication features will be implemented.
+
+    GIS Sector:
+        Development and integration of the GIS sector with more features.
+
+    Admin Panel Enhancements:
+        Further functionalities and improvements for the Admin panel.
+
+Contributions
+
+    Contributions are welcome! Feel free to fork the repository and submit pull requests.
+
+License
+
+    This project is licensed under the MIT License.
 
 Registration form
 
